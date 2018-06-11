@@ -1,0 +1,8 @@
+{
+    "guideSrc": "assets/scss/",
+    "guideDest": "guide/",
+    "cssSrc": "assets/css/",
+    "partials": {
+      "assetshead": "./mustache/main.mustache"
+    }
+}

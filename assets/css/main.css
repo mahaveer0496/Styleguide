@@ -1,0 +1,132 @@
+/*md
+
+# Form 
+
+Some beautifule Form
+
+Component example
+
+```html_example
+<form class="form" >
+  <input type="text" class="form__field">
+  <input type="text" class="form__field">
+  <button class="form__button">Submit</button>
+</form>
+```
+*/
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .form__field {
+    width: 40%;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: black;
+    padding: 4px; }
+  .form__button {
+    width: 40%;
+    background-color: orangered;
+    border: none;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    outline: none;
+    padding: 10px;
+    border-radius: 4px; }
+
+/*md
+
+# Text 
+
+Some beautifule text
+
+Component example
+
+```html_example
+<p class="text">Some awesome text</p>
+<p class="text text--blue">Some awesome text</p>
+<p class="text text--orange">Some awesome text</p>
+```
+*/
+.text {
+  font-size: 24px;
+  letter-spacing: 4px; }
+  .text--blue {
+    color: blue; }
+  .text--orange {
+    color: orangered; }
+
+/*md
+
+# Colors
+
+Colors used in the Project
+
+Component example
+
+```html_example
+<div class="wrapper">
+
+
+  <div class="color-box">
+    <div class="color-box__color color-box__color--red"></div>
+    <div class="color-box__tag">
+      <span>
+    $primary-blue: #abcdef
+    </span>
+    </div>
+  </div>
+
+  <div class="color-box">
+    <div class="color-box__color color-box__color--blue"></div>
+    <div class="color-box__tag">$primary-red</div>
+  </div>
+
+  <div class="color-box">
+    <div class="color-box__color color-box__color--orange"></div>
+    <div class="color-box__tag">$primary-orange</div>
+  </div>
+</div>
+
+
+```
+*/
+.wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.color-box {
+  width: 30%;
+  border-radius: 4px;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
+  .color-box__tag {
+    color: white;
+    height: 35%;
+    background-color: black;
+    border-radius: 0 0 4px 4px; }
+  .color-box__color {
+    height: 65%;
+    border-radius: 4px 4px 0 0; }
+    .color-box__color--red {
+      background-color: red; }
+    .color-box__color--blue {
+      background-color: blue; }
+    .color-box__color--orange {
+      background-color: orange; }
+
+/*md
+# Project Style Guide
+
+## Contains 
+
+* All the colors used across Project
+* All the Styles for each individual Component
+
+### Have fun colaborating with us :)
+*/

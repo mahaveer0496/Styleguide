@@ -1,0 +1,72 @@
+$primary-red: red;
+$primary-blue: blue;
+$primary-orange: orange;
+/*md
+
+# Colors
+
+Colors used in the Project
+
+Component example
+
+```html_example
+<div class="wrapper">
+
+
+  <div class="color-box">
+    <div class="color-box__color color-box__color--red"></div>
+    <div class="color-box__tag">
+      <span>
+    $primary-blue: #abcdef
+    </span>
+    </div>
+  </div>
+
+  <div class="color-box">
+    <div class="color-box__color color-box__color--blue"></div>
+    <div class="color-box__tag">$primary-red</div>
+  </div>
+
+  <div class="color-box">
+    <div class="color-box__color color-box__color--orange"></div>
+    <div class="color-box__tag">$primary-orange</div>
+  </div>
+</div>
+
+
+```
+*/
+
+.wrapper {
+  display: flex;
+  justify-content: space-between
+}
+
+.color-box {
+  width: 30%;  
+  border-radius: 4px;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+  &__tag {
+    color: white;
+    height: 35%;
+    background-color: black;
+    border-radius: 0 0 4px 4px;
+  }
+  &__color {
+    height: 65%;
+    border-radius: 4px 4px 0 0;            
+    &--red {
+      background-color: $primary-red;
+    }
+    &--blue {
+      background-color: $primary-blue;
+    }
+    &--orange {
+      background-color: $primary-orange;
+    }
+  }
+}

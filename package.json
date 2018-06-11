@@ -1,0 +1,17 @@
+{
+  "name": "StyleGuide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass assets/scss/main.scss assets/css/main.css",
+    "build-atlas": "atlas-guide --build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "atlas-guide": "^1.1.2",
+    "node-sass": "^4.9.0"
+  }
+}

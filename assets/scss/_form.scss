@@ -1,0 +1,42 @@
+/*md
+
+# Form 
+
+Some beautifule Form
+
+Component example
+
+```html_example
+<form class="form" >
+  <input type="text" class="form__field">
+  <input type="text" class="form__field">
+  <button class="form__button">Submit</button>
+</form>
+```
+*/
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  &__field{
+    width:40%;
+    margin-bottom: 10px;
+    background-color: white;    
+    border-radius:4px;
+    box-shadow: 0 3px 3px rgba(0,0,0,.3);
+    border: 1px solid rgba(0,0,0,.2);
+    color:black;
+    padding:4px;
+    
+  }
+  &__button{
+    width:40%;
+    background-color: orangered;
+    border:none;
+    box-shadow: 0 3px 3px rgba(0,0,0,.3);
+    outline:none;
+    padding:10px;
+    border-radius: 4px;
+  }
+}

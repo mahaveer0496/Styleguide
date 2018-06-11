@@ -1,0 +1,25 @@
+/*md
+
+# Text 
+
+Some beautifule text
+
+Component example
+
+```html_example
+<p class="text">Some awesome text</p>
+<p class="text text--blue">Some awesome text</p>
+<p class="text text--orange">Some awesome text</p>
+```
+*/
+
+.text {
+  font-size: 24px;
+  letter-spacing: 4px;
+  &--blue {
+    color: blue;
+  }
+  &--orange {
+    color: orangered;
+  }
+}
